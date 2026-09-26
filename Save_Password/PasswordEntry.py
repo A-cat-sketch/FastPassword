@@ -7,9 +7,8 @@ class PasswordEntry():
     """
     Password entry class
     """
-    def __init__(self, name, address, remarks, password):
+    def __init__(self, name, remarks, password):
         self.name = name
-        self.address = address
         self.remarks = remarks
         self.password = password
     
@@ -18,5 +17,4 @@ class PasswordEntry():
             'name':self.name,
             'password':self.password, 
             'remarks':self.remarks, 
-            'address':self.address
         }
