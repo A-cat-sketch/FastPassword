@@ -1,4 +1,5 @@
 import os
+import getpass
 
 from Save_Password import VaultManager
 from Save_Password.VaultManager import VAULT_FOLDER
@@ -237,8 +238,8 @@ class Command:
             except Exception:
                 print("---旧主密码不正确，未做任何修改---")
                 return
-        new_password = input("请输入新主密码：")
-        confirm = input("请再次输入新主密码：")
+        new_password = getpass.getpass("请输入新主密码：")
+        confirm = getpass.getpass("请再次输入新主密码：")
         if new_password == "":
             print("---新主密码不能为空，未做任何修改---")
             return

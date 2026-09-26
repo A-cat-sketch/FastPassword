@@ -1,4 +1,5 @@
 import Fix_file
+import getpass
 from Assets.Pictures import TxT
 import Command
 
@@ -15,7 +16,7 @@ if error == "ERROR":
         input("功能未完善，按任意键继续...")
 
 print("欢迎使用FastPassword，输入help查看帮助")
-main_password = input("请输入主密码：")
+main_password = getpass.getpass("请输入主密码：")
 while main_password == "":
     main_password = input("主密码不能为空，请重新输入主密码：")
 recognition = Command.Command(main_password)
