@@ -32,7 +32,7 @@ class Command:
   show <name>                        查看某条密码
   delete <name>                      删除某条密码
   list                               列出所有条目
-  search <关键词>                    搜索条目名称
+  search <keyword>                    搜索条目名称
 
 修改操作：
   update <name> <remarks> <password> 修改某条密码（会覆盖）
